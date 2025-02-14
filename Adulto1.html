@@ -1,6 +1,3 @@
-{% block content %}
-
-{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -16,28 +13,57 @@
 
 <body>
     <form method="GET" action="{% url 'cars_list' %}">
-        <input type="text" name="search" placeholder="Buscar carro...">
+        <input type="text" name="search" placeholder="Buscar Terno....">
         <button type="submit">Buscar</button>
     </form>
 
     <div class="car-grid">
-        {% if terno %}
-        {% for controle in terno %}
+
         <div class="car-card">
-            <img src="{{ controle.img.url }}" alt="{{ controle.branch }} - {{ controle.phones }}">
-            <h2>{{ controle.titulo }}</h2>
-            <p>{{ controle.descricao }}/{{ controle.branch }} </p>
-            {% comment %} <p>{{ car.factory_year }} - R$ {{ car.value }}</p> {% endcomment %}
+            <img src="assets/IMG/1.png" alt="{{ controle.branch }} - {{ controle.phones }}">
+            <h2>Terno 1</h2>
+            <p>Terno feito para...</p>
+            <!-- <p>{{ car.factory_year }} - R$ {{ car.value }}</p> -->
         </div>
-        {% comment %} <div class="car-card">
-            <img src="{{ controle.img1.url }}" alt="{{ controle.branch }} - {{ controle.phones }}">
-            <h2>{{ controle.name }}</h2>
-            <p>{{ controle.phones }}/{{ controle.branch }} </p>
-        </div> {% endcomment %}
-        {% endfor %}
-        {% else %}
+
+        <div class="car-card">
+            <img src="assets/IMG/2.png" alt="{{ controle.branch }} - {{ controle.phones }}">
+            <h2>Terno 1</h2>
+            <p>Terno feito para...</p>
+            <!-- <p>{{ car.factory_year }} - R$ {{ car.value }}</p> -->
+        </div>
+
+        <div class="car-card">
+            <img src="assets/IMG/3.png" alt="{{ controle.branch }} - {{ controle.phones }}">
+            <h2>Terno 1</h2>
+            <p>Terno feito para...</p>
+            <!-- <p>{{ car.factory_year }} - R$ {{ car.value }}</p> -->
+        </div>
+
+        <div class="car-card">
+            <img src="assets/IMG/4.png" alt="{{ controle.branch }} - {{ controle.phones }}">
+            <h2>Terno 1</h2>
+            <p>Terno feito para...</p>
+            <!-- <p>{{ car.factory_year }} - R$ {{ car.value }}</p> -->
+        </div>
+        
+        <div class="car-card">
+            <img src="assets/IMG/5.png" alt="{{ controle.branch }} - {{ controle.phones }}">
+            <h2>Terno 1</h2>
+            <p>Terno feito para...</p>
+            <!-- <p>{{ car.factory_year }} - R$ {{ car.value }}</p> -->
+        </div>
+        
+        <div class="car-card">
+            <img src="assets/IMG/6.png" alt="{{ controle.branch }} - {{ controle.phones }}">
+            <h2>Terno 1</h2>
+            <p>Terno feito para...</p>
+            <!-- <p>{{ car.factory_year }} - R$ {{ car.value }}</p> -->
+        </div>
+
         <p class="no-results">Nenhum carro encontrado.</p>
-        {% endif %}
+
+
     </div>
 
 
