@@ -25,6 +25,27 @@
 </head>
 
 <body>
+    <!-- Sidebar -->
+    <label>
+        <input type="checkbox">
+        <div class="toggle">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </div>
+
+        <div class="slide">
+            <h2>Menu</h2>
+            <img src="assets/IMG/CARLOS_TERNOS.png" alt="">
+            <ul>
+                <li><a href="Adulto1.html"> Adulto </a></li>
+                <li style="display: none;"><a href="#"> Infantil </a></li>
+                <li style="display: none;"><a href="#"> Acessorios </a></li>
+                <li><a href="#"> Contato </a></li>
+            </ul>
+        </div>
+    </label> 
+
     <form method="GET" action="{% url 'cars_list' %}">
         <input type="text" name="search" placeholder="Buscar Terno....">
         <!-- <button type="submit">Buscar</button> -->
@@ -83,7 +104,7 @@
     <footer class="py-3 my-4">
         <p style="text-align: center;"> A Carlos terno é uma marca que esta no mercado de moda masculina desde 2000 </p>
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="Home.html" class="nav-link px-2 text-body-secondary">Home</a></li>
             <li class="nav-item"><a href="Adulto1.html" class="nav-link px-2 text-body-secondary">Adulto</a></li>
             <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li> -->
