@@ -87,3 +87,8 @@
   button[type="submit"]:hover {
       background-color: #108eb8;
   }
+
+  p{
+    margin: 3%;
+    text-align: justify;
+  }
