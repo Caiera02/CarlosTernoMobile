@@ -11,7 +11,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-            if (!/Mobi|Android|iPhone|iPad|iPod|Opera Mini/i.test(userAgent)) {
+            if (!/Mobi|Android|iPhone|iPad|iPod ||Opera Mini/i.test(userAgent)) {
                 document.body.innerHTML = `
               <div class="container">
                 <h1>Acesso Restrito</h1>
@@ -46,10 +46,10 @@
         </div>
     </label> 
 
-    <form method="GET" action="{% url 'cars_list' %}">
+    <!-- <form method="GET" action="{% url 'cars_list' %}">
         <input type="text" name="search" placeholder="Buscar Terno....">
-        <!-- <button type="submit">Buscar</button> -->
-    </form>
+         <button type="submit">Buscar</button> {}
+    </form> -->
 
     <div class="car-grid">
 
@@ -128,4 +128,3 @@
 
 </html>
 
-{% endblock %}
